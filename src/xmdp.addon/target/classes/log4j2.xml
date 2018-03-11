@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<!-- 变量配置 -->
+	<Properties>
+		<Property name="log_path">logs/</Property>
+	</Properties>
+
+	<!-- appender配置 -->
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%d][%t][%p][%c:%L] %m%n" />
+		</Console>
+		<!-- 每天文件按顺序压缩存放 -->
+		<RollingFile name="DailyRollingFile" fileName="${log_path}/xmdp.log"
+			filePattern="${log_path}/xmdp%d{yyyy-MM-dd}-%i.log.gz">
+			<PatternLayout pattern="[%d][%t][%p][%c:%L] %m%n" />
+			<SizeBasedTriggeringPolicy size="50 MB" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="DailyRollingFile" />
+		</Root>
+	</Loggers>
+</Configuration>
