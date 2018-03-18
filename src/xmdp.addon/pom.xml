@@ -1,18 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-  <artifactId>xmdp.addon</artifactId>
-  <description>插件体系</description>
-  <parent>
-  	<groupId>com.javafxchina</groupId>
-  	<artifactId>xmdp.parent</artifactId>
-  	<version>1.0.0</version>
-  </parent>
-  <dependencies>
-  	<dependency>
-  		<groupId>com.javafxchina</groupId>
-  		<artifactId>xmdp.core</artifactId>
-  		<version>1.0.0</version>
-  	</dependency>
-  </dependencies>
+	<artifactId>xmdp.addon</artifactId>
+	<description>核心包</description>
+	<parent>
+		<groupId>net.javafxchina</groupId>
+		<artifactId>xmdp.parent</artifactId>
+		<version>1.0.0</version>
+		<relativePath>..\xmdp.parent\</relativePath>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>net.javafxchina</groupId>
+			<artifactId>xmdp.core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+	
 </project>

@@ -3,7 +3,7 @@
   <artifactId>xmdp.addon.test</artifactId>
   <description>测试插件</description>
     <parent>
-  	<groupId>com.javafxchina</groupId>
+  	<groupId>net.javafxchina</groupId>
   	<artifactId>xmdp.parent</artifactId>
   	<version>1.0.0</version>
   	<relativePath>..\xmdp.parent</relativePath>

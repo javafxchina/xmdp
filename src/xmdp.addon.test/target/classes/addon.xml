@@ -14,7 +14,7 @@
            http://www.springframework.org/schema/util
 		   http://www.springframework.org/schema/util/spring-util.xsd">
 	
-	<bean id="testAddon" class="com.javafxchina.xmdp.addon.test.TestAddon"
+	<bean id="testAddon" class="net.javafxchina.xmdp.addon.test.TestAddon"
 		init-method="init">
 	</bean>
 </beans>

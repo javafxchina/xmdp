@@ -1,1 +1,0 @@
-package com.javafxchina.xmdp.addon;
