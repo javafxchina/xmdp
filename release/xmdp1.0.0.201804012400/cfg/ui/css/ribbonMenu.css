@@ -1,0 +1,21 @@
+ RibbonMenu{
+	 -fx-background-color: #3955a3;
+}
+
+.ribbon-menu-button {
+    -fx-background-color: #3955a3;
+    -fx-text-fill: white;
+    -fx-border: none; 
+    -fx-background-radius: 0;
+    -fx-pref-width: 80;
+    -fx-pref-height: 80;
+    -fx-alignment: center;
+}
+
+.ribbon-menu-button:hover {
+    -fx-background-color: #24408f;
+}
+
+.ribbon-menu-button:focused {
+    -fx-background-color: #4d6ab8;
+}

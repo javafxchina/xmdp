@@ -1,0 +1,12 @@
+[
+	{
+		"key": "app",
+		"showName": "应用",
+		"iconpath": "test.png"
+	},
+	{
+		"key": "config",
+		"showName": "配置",
+		"iconpath": "config.png"
+	}
+]

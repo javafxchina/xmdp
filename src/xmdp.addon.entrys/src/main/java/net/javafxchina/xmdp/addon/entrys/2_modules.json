@@ -1,0 +1,20 @@
+[
+	{
+		"key": "explore_javafxchina",
+		"showName": "JavaFXChina",
+		"iconpath": "logoIcon.png",
+		"type": "WEB",
+		"className": "",
+		"uri": "www.javafxchina.net",
+		"extParam": ""
+	},
+	{
+		"key": "scenebuilder",
+		"showName": "SceneBuilder",
+		"iconpath": "ide.png",
+		"type": "EXTERN_JAR",
+		"className": "",
+		"uri": "extern/xmdp.scenebuilder-1.0.0.jar",
+		"extParam": ""
+	}
+]

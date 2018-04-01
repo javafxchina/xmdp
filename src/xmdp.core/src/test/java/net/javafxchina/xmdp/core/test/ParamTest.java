@@ -4,14 +4,14 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import net.javafxchina.xmdp.core.Params;
-import net.javafxchina.xmdp.core.Params.DESSecurityUtil;
+import net.javafxchina.xmdp.core.XMDPParams;
+import net.javafxchina.xmdp.core.XMDPParams.DESSecurityUtil;
 
 public class ParamTest {
 
 	@Test
 	public void test() throws Exception {
-		DESSecurityUtil des  = new Params().new DESSecurityUtil();
+		DESSecurityUtil des  = new XMDPParams().new DESSecurityUtil();
 		String result = String.valueOf(des.encrypt("xman"));
 		System.out.println(result);
 		String actual="J6PlnFoM9UU=";

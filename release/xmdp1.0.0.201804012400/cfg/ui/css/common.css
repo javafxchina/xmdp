@@ -1,0 +1,69 @@
+.button {
+	-fx-text-fill: #333333;
+	-fx-font-family: "Microsoft YaHei";
+	-fx-font-weight: bold;
+	-fx-background-color: linear-gradient(#fafdfe, #e8f5fc),
+		linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+	/*创建线性渐变*/
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.button:hover {
+	-fx-background-color: linear-gradient(#fafdfe, #e8f5fc),
+		linear-gradient(#a7d9f5 0%, #bee6fd 49%, #d9f0fc 50%, #eaf6fd 100%);
+}
+
+.label {
+	-fx-text-fill: #333333;
+	-fx-font-family: "Microsoft YaHei";
+	-fx-font-weight: bold;
+}
+
+.tab {
+	-fx-text-fill: #333333;
+	-fx-font-family: "Microsoft YaHei";
+	-fx-font-weight: bold;
+}
+
+.table-cell {
+	-fx-font-family: "Microsoft YaHei";
+	-fx-font-style: italic;
+}
+
+.tab-pane .tab:selected {
+	-fx-background-color: #ffffff;
+}
+/*表格获取焦点，行被选中，鼠标未聚焦*/
+.table-view:focused .table-row-cell:filled:focused:selected {
+     -fx-background-color: #b4cde9;
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/*表格未获取焦点，行被选中，鼠标未聚焦*/
+.table-row-cell:filled:focused:selected {
+     -fx-background-color: #b4cde6;
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/*行未被选中，鼠标聚焦*/
+.table-view:row-selection .table-row-cell:filled:hover {
+	-fx-background-color: #b4cde6;
+	-fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+	-fx-text-fill: -fx-text-inner-color;
+}
+/*表格获取焦点，行被选中，鼠标聚焦*/
+.table-view:focused .table-row-cell:filled:focused:selected:hover {
+    -fx-background-color: #3399FF;
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+
+/*表格未获取焦点，行被选中，鼠标聚焦*/
+.table-view:row-selection .table-row-cell:filled:focused:hover {
+    -fx-background-color: #b4cde6;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0, 1.0 1.0 2.0 1.0, 2.0 2.0 3.0 2.0, 3.0 3.0 4.0 3.0;
+    -fx-text-fill: -fx-text-inner-color;
+}

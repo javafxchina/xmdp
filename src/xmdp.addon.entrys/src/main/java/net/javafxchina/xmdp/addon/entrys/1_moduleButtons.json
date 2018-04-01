@@ -1,0 +1,16 @@
+[
+		{
+		"menuKey": "app",
+		"key": "explore_javafxchina",
+		"showName": "JavaFXChina",
+		"iconpath": "logoIcon.png",
+		"moduleKey": "explore_javafxchina"
+	},
+	{
+		"menuKey": "config",
+		"key": "scenebuilder",
+		"showName": "SceneBuilder",
+		"iconpath": "ide.png",
+		"moduleKey": "scenebuilder"
+	}
+]

@@ -1,0 +1,1 @@
+java -jar xmdp.product-1.0.0.jar
