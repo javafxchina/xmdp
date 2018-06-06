@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.ToolBar;
@@ -17,6 +18,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
+import javafx.scene.paint.Color;
 import net.javafxchina.xmdp.core.XMDPParams;
 import net.javafxchina.xmdp.core.XMDPContext;
 import net.javafxchina.xmdp.ui.dk.ResourcePathDefine.DesktopResource;
@@ -48,6 +50,7 @@ public class XMDPController implements Initializable {
 	private double logoWidth = 160;
 	private double tabIconHeight=25;
 	private double tabIconWidth=25;
+	private String titleColor="#000000";
 
 	public final static String CLASS_DEFINE_TOPBAR = "topBar";
 	public final static String CLASS_DEFINE_TAB = "tab";
@@ -88,6 +91,7 @@ public class XMDPController implements Initializable {
 			logoHeight =xmdpParams.getIntParam("xmdp.logoheight");
 			logoWidth = xmdpParams.getIntParam("xmdp.logowidth");
 			title =xmdpParams.getStringParam("xmdp.apptitle");
+			titleColor=xmdpParams.getStringParam("xmdp.apptitle_color");
 		} catch (Exception e) {
 			logger.error("初始化参数获取异常", e);
 			throw new RuntimeException(e);
@@ -125,7 +129,12 @@ public class XMDPController implements Initializable {
 		logoIv.setFitHeight(logoHeight);
 		logoIv.setFitWidth(logoWidth);
 		topBar.getItems().add(logoIv);
-
+		
+		
+		Label appTitel=new Label(title);
+		appTitel.setTextFill(Color.web(titleColor));
+		topBar.getItems().add(appTitel);
+		
 		// logo左对齐，按钮右对齐
 		Region spacer = new Region();
 		HBox.setHgrow(spacer, Priority.ALWAYS);

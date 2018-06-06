@@ -20,6 +20,7 @@
 		<entry key="xmdp.logoheight" value="40" />
 		<entry key="xmdp.logowidth" value="85" />
 		<entry key="xmdp.apptitle" value="XMDP" />
+		<entry key="xmdp.apptitle_color" value="#ffffff" />
 		<entry key="xmdp.buttongroup_row_height" value="180" />
 		<entry key="xmdp.buttonimage_width" value="100" />
 	</util:map>
