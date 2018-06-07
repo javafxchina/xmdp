@@ -24,6 +24,11 @@
 			<artifactId>xmdp.addon.entrys</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>net.javafxchina</groupId>
+			<artifactId>xdmp.addon.demo</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

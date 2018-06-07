@@ -21,6 +21,7 @@ import net.javafxchina.xmdp.ui.util.UiTools;
  *
  */
 public abstract class FXMLBaseView extends BaseView {
+	public static final String fxmlCfgPath="cfg/ui/fxml/";//FXML文件的配置路径
 	private static Logger logger = LoggerFactory.getLogger(FXMLBaseView.class);
 	protected Initializable controller;
 	protected URL fxmlURL;
@@ -50,6 +51,9 @@ public abstract class FXMLBaseView extends BaseView {
 	public void setFXML(String fxmlPath, Initializable controller) {
 		this.isFXMLWithController=false;
 		this.controller = controller;
+		if(!fxmlPath.startsWith(fxmlCfgPath)) {
+			fxmlPath=fxmlCfgPath+fxmlPath;
+		}
 		try {
 			this.fxmlURL =FXMLUtil.getURLByFXML(fxmlPath);
 		} catch (Exception e) {
@@ -75,6 +79,9 @@ public abstract class FXMLBaseView extends BaseView {
 	
 	public void setFXMLWithController(String fxmlPath) {
 		this.isFXMLWithController=true;
+		if(!fxmlPath.startsWith(fxmlCfgPath)) {
+			fxmlPath=fxmlCfgPath+fxmlPath;
+		}
 		try {
 			this.fxmlURL =FXMLUtil.getURLByFXML(fxmlPath);
 		} catch (Exception e) {

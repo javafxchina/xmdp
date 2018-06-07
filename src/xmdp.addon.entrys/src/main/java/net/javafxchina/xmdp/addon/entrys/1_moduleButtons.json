@@ -1,10 +1,38 @@
 [
-		{
+	{
 		"menuKey": "app",
 		"key": "explore_javafxchina",
 		"showName": "JavaFXChina",
 		"iconpath": "logoIcon.png",
 		"moduleKey": "explore_javafxchina"
+	},
+	{
+		"menuKey": "app",
+		"key": "TestClientView",
+		"showName": "TestClientView",
+		"iconpath": "demo.png",
+		"moduleKey": "TestClientView"
+	},
+	{
+		"menuKey": "app",
+		"key": "最简单FXML视图",
+		"showName": "最简单FXML视图",
+		"iconpath": "demo.png",
+		"moduleKey": "最简单FXML视图"
+	},
+	{
+		"menuKey": "app",
+		"key": "最简单FXML视图+控制类",
+		"showName": "最简单FXML视图+控制类",
+		"iconpath": "demo.png",
+		"moduleKey": "最简单FXML视图+控制类"
+	},
+	{
+		"menuKey": "app",
+		"key": "TestClientView+Spring托管控制类",
+		"showName": "TestClientView+Spring托管控制类",
+		"iconpath": "demo.png",
+		"moduleKey": "TestClientView+Spring托管控制类"
 	},
 	{
 		"menuKey": "config",

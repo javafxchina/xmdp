@@ -89,8 +89,8 @@ public class TabOpenManager {
 				tab = (BaseView) constructor.newInstance(module);
 				tab.init();
 			} catch (Exception e) {
-				logger.error("初始化模块出现错误,模块key:" + module.key, e);
-				tab = new ErrorInfoView(module, "初始化模块出现错误,模块key:" + module.key + "\n" + e.getMessage());
+				logger.error("初始化模块出现错误,模块key:" + module.key+"["+module.toString()+"]", e);
+				tab = new ErrorInfoView(module, "初始化模块出现错误,模块key:" + module.key +"["+module.toString()+"]"+ "\n" + e.getMessage());
 				tab.init();
 			}
 		} else if (module.type.equalsIgnoreCase(ModuleInfo.TYPE_WEB)) {

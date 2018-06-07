@@ -79,7 +79,7 @@ public class FXMLUtil {
 	 * 获取指定FXML文件名对应的URL
 	 * 
 	 * @param fileName
-	 *            FXML文件名，注意，该文件必须存放在产品文件夹的fxml子文件夹下
+	 *            FXML文件名
 	 * @return 对应的URL
 	 * @throws Exception
 	 *             当 fxml文件不存在或格式不正确时抛出此异常

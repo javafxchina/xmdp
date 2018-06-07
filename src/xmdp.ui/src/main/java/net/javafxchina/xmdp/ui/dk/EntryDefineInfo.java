@@ -51,6 +51,12 @@ public class EntryDefineInfo {
     	public String uri;
     	/** 模块运行的扩展参数**/
     	public String extParam;
+		@Override
+		public String toString() {
+			return "ModuleInfo [key=" + key + ", showName=" + showName + ", iconpath=" + iconpath + ", type=" + type
+					+ ", className=" + className + ", uri=" + uri + ", extParam=" + extParam + "]";
+		}
+    	
     }
     /**
 	 * 模块运行的扩展参数工具类，可以用于ModuleInfo中的extParam属性解析，支持类似a=1&b=2格式的参数配置（参考URI的QueryString格式）
