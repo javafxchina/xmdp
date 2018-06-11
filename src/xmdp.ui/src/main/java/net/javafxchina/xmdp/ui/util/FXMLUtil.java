@@ -2,9 +2,12 @@ package net.javafxchina.xmdp.ui.util;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.layout.Pane;
 import net.javafxchina.xmdp.ui.dk.ControllerFactory;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -18,9 +21,9 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-
 /**
  * 从工作目录下获取FXML文件资源
+ * 
  * @author Victor
  *
  */
@@ -122,6 +125,24 @@ public class FXMLUtil {
 		loader.setControllerFactory(new ControllerFactory());
 		Parent root = loader.load();
 		return root;
+	}
+
+	public static List<javafx.scene.Node> getChildrenNodes(javafx.scene.Node parent) {
+		if (parent instanceof Pane) {
+			List<javafx.scene.Node> re = new ArrayList<javafx.scene.Node>();
+			Pane pa = (Pane) parent;
+			for (javafx.scene.Node node : pa.getChildren()) {
+				re.add(node);
+				 List<javafx.scene.Node> children=getChildrenNodes(node);
+				 if(children!=null) {
+					 re.addAll(children);
+				 }
+			}
+			return re;
+		} else {
+			return null;
+		}
+
 	}
 
 }

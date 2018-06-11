@@ -39,6 +39,7 @@ public class EntryDefineInfo {
     	public final static String TYPE_CLIENT_FXML="CLIENT_FXML";
 		public final static String TYPE_WEB="WEB";
 		public final static String TYPE_EXTERN_JAR="EXTERN_JAR";
+		public final static String TYPE_EXTERN_EXE="EXTERN_EXE";
     	public String key;
     	public String showName;
     	/** 用于选项卡图标**/
