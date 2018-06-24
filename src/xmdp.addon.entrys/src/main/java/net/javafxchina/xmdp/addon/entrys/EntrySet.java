@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import net.javafxchina.xmdp.core.util.JSONUtil;
 import net.javafxchina.xmdp.ui.dk.EntryDefineInfo.*;
+import net.javafxchina.xmdp.ui.util.ResourceUtil;
 import net.javafxchina.xmdp.ui.dk.IEntrySet;
 
 /**
@@ -32,7 +33,8 @@ public class EntrySet implements IEntrySet {
 	public void init() throws Exception {
 		logger.info("开始解析EntrySet配置");
 		try {
-			URL url = this.getClass().getResource("0_sideMenus.json");
+			String urlString = ResourceUtil.getFileUrlByRelativePath("cfg/ui/entrys/0_sideMenus.json");
+			URL url=new URL(urlString);
 			List<SideMenu> sms = JSONUtil.getList(url, SideMenu[].class);
 			for (SideMenu sm : sms) {
 				if (sideMenus.containsKey(sm.key)) {
@@ -46,7 +48,8 @@ public class EntrySet implements IEntrySet {
 		}
 
 		try {
-			URL url = this.getClass().getResource("1_moduleButtons.json");
+			String urlString = ResourceUtil.getFileUrlByRelativePath("cfg/ui/entrys/1_moduleButtons.json");
+			URL url=new URL(urlString);
 			List<ModuleButton> mbs = JSONUtil.getList(url, ModuleButton[].class);
 			for (ModuleButton mb : mbs) {
 				if (moduleButtons.containsKey(mb.key)) {
@@ -60,7 +63,8 @@ public class EntrySet implements IEntrySet {
 		}
 
 		try {
-			URL url = this.getClass().getResource("2_modules.json");
+			String urlString = ResourceUtil.getFileUrlByRelativePath("cfg/ui/entrys/2_modules.json");
+			URL url=new URL(urlString);
 			List<ModuleInfo> mis = JSONUtil.getList(url, ModuleInfo[].class);
 			for (ModuleInfo mi : mis) {
 				if (moduleInfos.containsKey(mi.key)) {

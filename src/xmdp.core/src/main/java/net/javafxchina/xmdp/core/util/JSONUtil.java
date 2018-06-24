@@ -1,13 +1,18 @@
 package net.javafxchina.xmdp.core.util;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
 
 /**
  * JSON字符串与配置对象映射工具类
@@ -80,4 +85,31 @@ public class JSONUtil {
 		return Arrays.asList(list);
 	}
 
+	public static String toJson(List objs) {
+		Gson gson = new Gson();
+		String result = gson.toJson(objs);
+		return result;
+	}
+
+	public static <T> void toJson(File file, T[] objs, Class<T[]> type) throws Exception {
+		Gson gson = new Gson();
+		OutputStream out=null;
+		JsonWriter writer=null;
+		try {
+			out = new FileOutputStream(file);
+			writer= new JsonWriter(new OutputStreamWriter(out, "UTF-8"));
+			gson.toJson(objs, type, writer);
+			writer.flush();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				writer.close();
+				out.close();
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+	}
 }
