@@ -85,6 +85,7 @@ public class JSONUtil {
 		return Arrays.asList(list);
 	}
 
+	@SuppressWarnings("rawtypes")
 	public static String toJson(List objs) {
 		Gson gson = new Gson();
 		String result = gson.toJson(objs);

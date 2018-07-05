@@ -35,7 +35,7 @@ import org.springframework.stereotype.Component;
 
 
 /**
- * 桌面主面板
+ * 桌面主面板，与XMDPLauncher配套
  * 
  * @author Victor
  *

@@ -10,10 +10,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
-import net.javafxchina.xmdp.ui.dk.NoticeFactory;
 import net.javafxchina.xmdp.ui.dk.EntryDefineInfo.*;
 import net.javafxchina.xmdp.ui.util.FXMLUtil;
-import net.javafxchina.xmdp.ui.util.UiTools;
+import net.javafxchina.xmdp.ui.util.UIUtil;
 
 /**
  * 基于FXML配置文件和控制器类的View
@@ -106,11 +105,11 @@ public abstract class FXMLBaseView extends BaseView {
 				fxmlLoader.setController(controller);
 
 				fxmlParent = fxmlLoader.load();
-				UiTools.setAnchor(fxmlParent, 0D, 0D, 0D, 0D);
+				UIUtil.setAnchor(fxmlParent, 0D, 0D, 0D, 0D);
 				pane.getChildren().add(fxmlParent);
 			} catch (Exception e) {
 				logger.error("打开模块错误",e);
-				NoticeFactory.openError(null, "打开模块错误:" + e.getMessage());
+				UIUtil.openError(null, "打开模块错误:" + e.getMessage());
 			}
 		}else {
 			//FXML中设置了controller，通过内置的ControllerFactory从Spring中获取
@@ -119,11 +118,11 @@ public abstract class FXMLBaseView extends BaseView {
 			}
 			try {
 				fxmlParent=FXMLUtil.getParentWithSpringControllerFactory(fxmlURL);
-				UiTools.setAnchor(fxmlParent, 0D, 0D, 0D, 0D);
+				UIUtil.setAnchor(fxmlParent, 0D, 0D, 0D, 0D);
 				pane.getChildren().add(fxmlParent);
 			} catch (Exception e) {
 				logger.error("打开模块错误",e);
-				NoticeFactory.openError(null, "打开模块错误:" + e.getMessage());
+				UIUtil.openError(null, "打开模块错误:" + e.getMessage());
 			}
 		}
 		

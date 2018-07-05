@@ -9,7 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-import net.javafxchina.xmdp.ui.util.UiTools;
+import net.javafxchina.xmdp.ui.util.UIUtil;
 import net.javafxchina.xmdp.ui.widgets.window.BaseWindow;
 
 
@@ -39,7 +39,7 @@ public class ConfirmDialog extends BaseWindow {
 		Image image = new Image(getClass().getResourceAsStream("info.png"));
         label.setGraphic(new ImageView(image));
 		label.setWrapText(true);
-		UiTools.setAnchor(label, 5D, null, 5D, 5D);
+		UIUtil.setAnchor(label, 5D, null, 5D, 5D);
 		anchorpane.getChildren().add(label);
 		setCenter(anchorpane);
 	}

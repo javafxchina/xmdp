@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-import net.javafxchina.xmdp.ui.util.UiTools;
+import net.javafxchina.xmdp.ui.util.UIUtil;
 import net.javafxchina.xmdp.ui.widgets.window.BaseWindow;
 
 
@@ -34,7 +34,7 @@ public class InformationDialog extends BaseWindow {
 		label.setPrefWidth(150);
 		label.setText(msg);
 		label.setWrapText(true);
-		UiTools.setAnchor(label, 10D, null, 5D, 5D);
+		UIUtil.setAnchor(label, 10D, null, 5D, 5D);
 		anchorpane.getChildren().add(label);
 		setCenter(anchorpane);
 	}

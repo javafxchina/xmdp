@@ -18,7 +18,7 @@ import net.javafxchina.xmdp.ui.util.FXMLUtil;
 import net.javafxchina.xmdp.ui.util.ResourceUtil;
 
 /**
- * 桌面
+ * 桌面，与XMDPController配套
  * @author Victor
  *
  */

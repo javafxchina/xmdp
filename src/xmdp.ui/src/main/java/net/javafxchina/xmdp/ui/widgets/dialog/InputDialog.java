@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-import net.javafxchina.xmdp.ui.util.UiTools;
+import net.javafxchina.xmdp.ui.util.UIUtil;
 import net.javafxchina.xmdp.ui.widgets.window.BaseWindow;
 
 
@@ -40,12 +40,12 @@ public class InputDialog extends BaseWindow {
 			label.setPrefWidth(150);
 			label.setText(msg+":");
 			label.setAlignment(Pos.CENTER_RIGHT);
-			UiTools.setAnchor(label, 35D, null, 5D, 285D);
+			UIUtil.setAnchor(label, 35D, null, 5D, 285D);
 			anchorpane.getChildren().add(label);
 		}
 		
 		text=new TextField();
-		UiTools.setAnchor(text, 35D, null, 120D, 5D);
+		UIUtil.setAnchor(text, 35D, null, 120D, 5D);
 		
 		anchorpane.getChildren().add(text);
 		setCenter(anchorpane);

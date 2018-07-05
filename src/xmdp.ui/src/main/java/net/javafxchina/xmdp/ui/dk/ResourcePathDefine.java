@@ -17,9 +17,18 @@ public class ResourcePathDefine {
 		 */
 		public static final String FXML = "cfg/ui/fxml/XMDP.fxml";
 		/**
+		 * 桌面fxml文件（MD设计版）
+		 */
+		public static final String FXML2 = "cfg/ui/fxml/XMDP2.fxml";
+		/**
 		 * 桌面css文件
 		 */
 		public static final String CSS= "cfg/ui/css/XMDP.css";
+		/**
+		 * 桌面css文件2（引入MD）
+		 */
+		public static final String CSS2= "cfg/ui/css/XMDP2.css";
+
 		/**
 		 * 标题栏图标
 		 */
@@ -36,7 +45,8 @@ public class ResourcePathDefine {
 		 * logo图标
 		 */
 		public static final String LOGO_ICON = "logoIcon.png";
-
+		/** logo的属性key*/
+		public static final String LOGO_PROPERTY_KEY="XMDP.LOGO";
 		/**
 		 * 默认的资源图标
 		 */

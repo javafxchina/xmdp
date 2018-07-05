@@ -2,7 +2,7 @@ package net.javafxchina.xmdp.ui.dk.test;
 
 import net.javafxchina.xmdp.ui.dk.EntryDefineInfo;
 import net.javafxchina.xmdp.ui.dk.EntryDefineInfo.ModuleInfo;
-import net.javafxchina.xmdp.ui.dk.ExeRunner;
+import net.javafxchina.xmdp.ui.dk.runner.ExeRunner;
 
 public class ExeRunnerTest {
 	@SuppressWarnings("static-access")

@@ -9,7 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
 import net.javafxchina.xmdp.ui.dk.EntryDefineInfo.ModuleInfo;
-import net.javafxchina.xmdp.ui.util.UiTools;
+import net.javafxchina.xmdp.ui.util.UIUtil;
 
 /**
  * 错误界面 tab页
@@ -31,7 +31,7 @@ public class ErrorInfoView extends BaseView {
 		hbox.getChildren().add(errorInfo);
 		hbox.setAlignment(Pos.CENTER);
 		// hbox.setStyle("-fx-background-color: red");
-		UiTools.setAnchor(hbox, 0.0, 0.0, 0.0, 0.0);
+		UIUtil.setAnchor(hbox, 0.0, 0.0, 0.0, 0.0);
 		pane.getChildren().add(hbox);
 	}
 
