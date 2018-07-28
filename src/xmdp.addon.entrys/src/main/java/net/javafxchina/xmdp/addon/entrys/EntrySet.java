@@ -85,7 +85,7 @@ public class EntrySet implements IEntrySet {
 			String mkey=mb.moduleKey;
 			ModuleInfo mi=this.moduleInfos.get(mkey);
 			if(mi==null) {
-				throw new RuntimeException(mkey+"对应的ModuleInfo配置为NULL");
+				throw new RuntimeException("moduleKey:"+mkey+"对应的ModuleInfo配置为NULL");
 			}
 		}
 	}

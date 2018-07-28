@@ -1,0 +1,80 @@
+[2018-06-27 01:04:46,499][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=D:\WorkDocs\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.addon
+[2018-06-27 01:04:46,506][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2018-06-27 01:04:46,550][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2018-06-27 01:04:46,552][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 1 addons
+[2018-06-27 01:04:46,553][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2018-06-27 01:04:46,555][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2018-06-27 01:04:47,228][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2018-06-27 01:04:47,292][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2018-06-27 01:04:47,333][main][DEBUG][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2018-06-27 01:04:47,338][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2018-06-27 01:04:47,339][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2018-06-27 01:04:47,340][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2018-06-27 01:04:47,341][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2018-06-27 01:04:47,342][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2018-06-27 01:04:47,342][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2018-06-27 01:04:49,458][main][TRACE][net.javafxchina.xmdp.addon.test.LoggerTest:13] trace
+[2018-06-27 01:04:49,459][main][DEBUG][net.javafxchina.xmdp.addon.test.LoggerTest:14] debug
+[2018-06-27 01:04:49,459][main][WARN][net.javafxchina.xmdp.addon.test.LoggerTest:15] warn
+[2018-06-27 01:04:49,460][main][INFO][net.javafxchina.xmdp.addon.test.LoggerTest:16] info
+[2018-06-27 01:04:49,460][main][ERROR][net.javafxchina.xmdp.addon.test.LoggerTest:17] error
+[2018-06-27 01:29:45,421][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=D:\WorkDocs\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.addon
+[2018-06-27 01:29:45,425][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2018-06-27 01:29:45,455][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2018-06-27 01:29:45,457][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 1 addons
+[2018-06-27 01:29:45,457][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2018-06-27 01:29:45,458][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2018-06-27 01:29:45,955][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2018-06-27 01:29:45,980][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2018-06-27 01:29:45,999][main][DEBUG][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2018-06-27 01:29:46,010][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2018-06-27 01:29:46,011][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2018-06-27 01:29:46,012][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2018-06-27 01:29:46,012][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2018-06-27 01:29:46,012][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2018-06-27 01:29:46,013][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2018-06-27 01:29:46,430][main][TRACE][net.javafxchina.xmdp.addon.test.LoggerTest:13] trace
+[2018-06-27 01:29:46,431][main][DEBUG][net.javafxchina.xmdp.addon.test.LoggerTest:14] debug
+[2018-06-27 01:29:46,431][main][WARN][net.javafxchina.xmdp.addon.test.LoggerTest:15] warn
+[2018-06-27 01:29:46,431][main][INFO][net.javafxchina.xmdp.addon.test.LoggerTest:16] info
+[2018-06-27 01:29:46,432][main][ERROR][net.javafxchina.xmdp.addon.test.LoggerTest:17] error
+[2018-07-12 13:44:01,355][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=H:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.addon
+[2018-07-12 13:44:01,368][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2018-07-12 13:44:01,397][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2018-07-12 13:44:01,399][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 1 addons
+[2018-07-12 13:44:01,399][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2018-07-12 13:44:01,400][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2018-07-12 13:44:02,031][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2018-07-12 13:44:02,074][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2018-07-12 13:44:02,100][main][DEBUG][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2018-07-12 13:44:02,104][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2018-07-12 13:44:02,107][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2018-07-12 13:44:02,107][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2018-07-12 13:44:02,108][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2018-07-12 13:44:02,108][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2018-07-12 13:44:02,109][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2018-07-12 13:44:02,484][main][TRACE][net.javafxchina.xmdp.addon.test.LoggerTest:13] trace
+[2018-07-12 13:44:02,485][main][DEBUG][net.javafxchina.xmdp.addon.test.LoggerTest:14] debug
+[2018-07-12 13:44:02,486][main][WARN][net.javafxchina.xmdp.addon.test.LoggerTest:15] warn
+[2018-07-12 13:44:02,486][main][INFO][net.javafxchina.xmdp.addon.test.LoggerTest:16] info
+[2018-07-12 13:44:02,487][main][ERROR][net.javafxchina.xmdp.addon.test.LoggerTest:17] error
+[2018-07-13 03:05:25,151][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=D:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.addon
+[2018-07-13 03:05:25,151][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2018-07-13 03:05:25,176][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2018-07-13 03:05:25,176][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 1 addons
+[2018-07-13 03:05:25,176][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2018-07-13 03:05:25,176][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2018-07-13 03:05:25,557][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2018-07-13 03:05:25,572][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2018-07-13 03:05:25,592][main][DEBUG][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2018-07-13 03:05:25,597][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2018-07-13 03:05:25,597][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2018-07-13 03:05:25,597][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2018-07-13 03:05:25,597][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2018-07-13 03:05:25,597][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2018-07-13 03:05:25,597][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2018-07-13 03:05:25,922][main][TRACE][net.javafxchina.xmdp.addon.test.LoggerTest:13] trace
+[2018-07-13 03:05:25,922][main][DEBUG][net.javafxchina.xmdp.addon.test.LoggerTest:14] debug
+[2018-07-13 03:05:25,922][main][WARN][net.javafxchina.xmdp.addon.test.LoggerTest:15] warn
+[2018-07-13 03:05:25,922][main][INFO][net.javafxchina.xmdp.addon.test.LoggerTest:16] info
+[2018-07-13 03:05:25,922][main][ERROR][net.javafxchina.xmdp.addon.test.LoggerTest:17] error

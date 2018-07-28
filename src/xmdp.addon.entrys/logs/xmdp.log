@@ -1,0 +1,90 @@
+[2018-06-24 22:59:53,909][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] å¼€å§‹è§£æžEntrySeté…ç½®
+[2018-06-24 22:59:53,960][main][ERROR][net.javafxchina.xmdp.addon.entrys.EntrySet:60] è§£æžmoduleButtons.jsonæ–‡ä»¶å‡ºé”™
+java.lang.NullPointerException
+	at net.javafxchina.xmdp.core.util.JSONUtil.getList(JSONUtil.java:82) ~[classes/:?]
+	at net.javafxchina.xmdp.addon.entrys.EntrySet.init(EntrySet.java:52) [classes/:?]
+	at net.javafxchina.xmdp.addon.entrys.test.EntrySetTest.test(EntrySetTest.java:19) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:?]
+[2018-06-24 23:00:21,947][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] å¼€å§‹è§£æžEntrySeté…ç½®
+[2018-06-24 23:01:26,626][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] å¼€å§‹è§£æžEntrySeté…ç½®
+[2018-06-24 23:01:27,657][main][ERROR][net.javafxchina.xmdp.addon.entrys.EntrySet:46] è§£æžsideMenus.jsonæ–‡ä»¶å‡ºé”™
+java.lang.Exception: é‡å¤çš„SideMenu keyï¼šapp
+	at net.javafxchina.xmdp.addon.entrys.EntrySet.init(EntrySet.java:41) [classes/:?]
+	at net.javafxchina.xmdp.addon.entrys.test.EntrySetTest.test(EntrySetTest.java:19) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:?]
+[2018-06-24 23:02:33,993][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] å¼€å§‹è§£æžEntrySeté…ç½®
+[2018-06-24 23:02:34,047][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] è§£æžEntrySeté…ç½®å®Œæˆ
+[2018-06-24 23:05:22,674][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-24 23:05:22,718][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
+[2018-06-24 23:05:39,787][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-24 23:05:39,827][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
+[2018-06-27 01:05:35,689][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:06:03,514][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] å¼€å§‹è§£æžEntrySeté…ç½®
+[2018-06-27 01:06:03,588][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] è§£æžEntrySeté…ç½®å®Œæˆ
+[2018-06-27 01:06:22,521][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:07:31,217][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:08:08,641][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:14:07,907][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] å¼€å§‹è§£æžEntrySeté…ç½®
+[2018-06-27 01:14:07,976][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] è§£æžEntrySeté…ç½®å®Œæˆ
+[2018-06-27 01:14:24,157][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:16:48,881][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:17:24,490][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:20:32,766][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:21:33,496][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:26:51,498][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:26:51,550][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
+[2018-06-27 01:27:08,969][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:27:09,019][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
+[2018-06-27 01:28:18,721][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:28:18,776][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
+[2018-06-27 01:28:39,740][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:29:24,792][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:29:24,838][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
+[2018-06-27 01:30:06,363][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-06-27 01:30:06,404][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
+[2018-07-13 03:05:37,376][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] ¿ªÊ¼½âÎöEntrySetÅäÖÃ
+[2018-07-13 03:05:37,421][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] ½âÎöEntrySetÅäÖÃÍê³É
