@@ -81,7 +81,7 @@ public class AddonsManager {
 					BeanDefinition bdef = beanFactory.getMergedBeanDefinition(beanId);
 
 					springServiceSet.registerBeanDefinition(beanId, bdef);
-					logger.debug(
+					logger.trace(
 							"Register beans in addon.xml:name=" + beanId + ";ClassName=" + bdef.getBeanClassName());
 				}
 

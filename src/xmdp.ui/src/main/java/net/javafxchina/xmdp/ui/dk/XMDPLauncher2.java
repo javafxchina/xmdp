@@ -41,7 +41,6 @@ public class XMDPLauncher2 extends Application {
 
 			JFXDecorator decorator = new JFXDecorator(stage, root);
 			decorator.setCustomMaximize(true);
-
 			ImageView logoIv = (ImageView) XMDPContext.getInstance().getProperty(DesktopResource.LOGO_PROPERTY_KEY);
 			if (logoIv == null) {
 				decorator.setGraphic(new SVGGlyph(""));
@@ -55,6 +54,7 @@ public class XMDPLauncher2 extends Application {
 
 			stage.getIcons().add(ResourceUtil.getImage(DesktopResource.TITLE_ICON));
 			stage.setScene(scene);
+			root.requestFocus();
 			String desktopCssUrl = ResourceUtil.getFileUrlByRelativePath(DesktopResource.CSS2);
 			scene.getStylesheets().add(desktopCssUrl);
 			stage.show();

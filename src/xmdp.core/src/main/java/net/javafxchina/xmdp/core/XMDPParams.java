@@ -33,6 +33,9 @@ public class XMDPParams {
 		if(!key.endsWith(".PWD")) {
 			return cfgParams.get(key);
 		}else {
+			if(cfgParams==null||cfgParams.get(key)==null) {
+				return null;
+			}
 			String pwd=cfgParams.get(key).toString();
 			DESSecurityUtil des  = new XMDPParams().new DESSecurityUtil();
 			try {
@@ -44,11 +47,17 @@ public class XMDPParams {
 		}
 		
 	}
-	public int getIntParam(String key) {
+	public Integer getIntParam(String key) {
+		if(getParam(key)==null) {
+			return null;
+		}
 		String param=getParam(key).toString();
 		return Integer.parseInt(param);
 	}
 	public String getStringParam(String key) {
+		if(getParam(key)==null) {
+			return null;
+		}
 		String param=getParam(key).toString();
 		return param;
 	}

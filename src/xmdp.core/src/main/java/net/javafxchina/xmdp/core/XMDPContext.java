@@ -50,6 +50,7 @@ public class XMDPContext {
 	 * @return 对应服务
 	 */
 	public <T> T getService(Class<T> type) {
+		if(serviceSet==null)return null;
 		return serviceSet.getService(type);
 	}
 
@@ -61,6 +62,7 @@ public class XMDPContext {
 	 * @return 对应服务
 	 */
 	public  Object getService(String beanName) {
+		if(serviceSet==null)return null;
 		return serviceSet.getService(beanName);
 	}
 
@@ -74,6 +76,7 @@ public class XMDPContext {
 	 */
 	@SuppressWarnings("rawtypes")
 	public  Class getClass(String className) throws ClassNotFoundException {
+		if(serviceSet==null)return null;
 		return serviceSet.getClass(className);
 	}
 	

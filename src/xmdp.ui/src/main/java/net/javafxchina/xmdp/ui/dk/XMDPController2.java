@@ -40,9 +40,6 @@ public class XMDPController2 implements Initializable {
 	private double logoWidth = 160;
 	private double tabIconHeight = 25;
 	private double tabIconWidth = 25;
-
-	public final static String CLASS_DEFINE_TAB = "tab";
-	public final static String CLASS_DEFINE_TABPANE = "tabPane";
 	private String title = "我的桌面";
 
 	@Autowired
@@ -66,7 +63,7 @@ public class XMDPController2 implements Initializable {
 
 	@PostConstruct
 	public void init() {
-		logger.info("XMDPController初始化成功");
+		logger.info("XMDPController2初始化成功");
 	}
 
 	@Override
@@ -82,9 +79,7 @@ public class XMDPController2 implements Initializable {
 		}
 
 		context.getRootStage().setTitle(title);
-
-		desktopTabPane.getStyleClass().add(CLASS_DEFINE_TABPANE);
-		homeTab.getStyleClass().add(CLASS_DEFINE_TAB);
+		
 
 		Image logoImage = ResourceUtil.getImage(DesktopResource.LOGO_ICON);
 		ImageView logoIv = new ImageView(logoImage);

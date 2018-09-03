@@ -31,7 +31,7 @@ public class EntrySet implements IEntrySet {
 
 	@PostConstruct
 	public void init() throws Exception {
-		logger.info("开始解析EntrySet配置");
+		logger.debug("开始解析EntrySet配置");
 		try {
 			String urlString = ResourceUtil.getFileUrlByRelativePath("cfg/ui/entrys/0_sideMenus.json");
 			URL url=new URL(urlString);
@@ -76,7 +76,7 @@ public class EntrySet implements IEntrySet {
 			logger.error("解析modules.json文件出错", e);
 			throw e;
 		}
-		logger.info("解析EntrySet配置完成");
+		logger.debug("解析EntrySet配置完成");
 		check();
 	}
 

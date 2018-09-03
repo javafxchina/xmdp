@@ -117,7 +117,7 @@ public class ResourceUtil {
 		}
 		File imgFile = getImageFileByFileName(fileName);
 		if (logger.isDebugEnabled()) {
-			logger.debug("图标路径：" + imgFile.getAbsolutePath());
+			logger.trace("图标路径：" + imgFile.getAbsolutePath());
 		}
 		if (!imgFile.exists()) {
 			logger.error("未找到图标:" + imgFile.getAbsolutePath() + ",将使用默认图标");

@@ -24,8 +24,8 @@ import net.javafxchina.xmdp.ui.util.ResourceUtil;
  * 基础无边框窗口
  */
 public class BaseWindow extends Stage {
-	protected double windowWidth = 600;
-	protected double windowHeight = 400;
+	protected double windowWidth = 400;
+	protected double windowHeight = 300;
 	protected double toolbarHeight = 35;
 	protected Scene scene;
 	protected BorderPane basePane;

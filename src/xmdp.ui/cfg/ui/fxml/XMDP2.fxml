@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<BorderPane id="BorderPane" fx:id="rootPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.152" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.javafxchina.xmdp.ui.dk.XMDPController2">
+<BorderPane id="BorderPane" fx:id="rootPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.javafxchina.xmdp.ui.dk.XMDPController2">
   <center>
-    <TabPane id="TabPane" fx:id="desktopTabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS">
+    <TabPane id="TabPane" fx:id="desktopTabPane" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS">
       <tabs>
         <Tab fx:id="homeTab" closable="false" text="">
           <content>

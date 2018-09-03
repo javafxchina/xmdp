@@ -58,7 +58,7 @@ public class XMDPEntryFactory {
 	public void init() throws Exception {
 		buttonRowHeight =xmdpParams.getIntParam("xmdp.buttongroup_row_height");
 		buttonWidth =xmdpParams.getIntParam("xmdp.buttonimage_width");
-		logger.info("XMDPEntryFactory初始化成功");
+		logger.debug("XMDPEntryFactory初始化成功");
 	}
 	/**
 	 * 创建主页，配置侧边栏菜单和菜单按钮

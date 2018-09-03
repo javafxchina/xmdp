@@ -13,7 +13,7 @@ import net.javafxchina.xmdp.ui.widgets.dialog.InformationDialog;
  *
  */
 public class UIUtil {
-	public static void openInformation(final Stage stg, String message) {
+	public static void openInformation(String message) {
 		new InformationDialog(message).openDialog();
 	}
 
