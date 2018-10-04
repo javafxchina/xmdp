@@ -56,17 +56,16 @@ public class FileUtil {
 		int MaxCount = 3;
 		while (count < MaxCount) {
 			try {
-				if (!dir.exists()) {
+				if(dir.exists()&&dir.isDirectory()) {
+					return;
+				}else {
 					if (!dir.mkdirs()) {
 						count++;
 						throw new Exception("移动文件失败:创建目录" + dir.getAbsolutePath() + "失败！");
 					} else {
 						return;
 					}
-				} else {
-					return;
 				}
-
 			} catch (Exception e) {
 				if (count >= MaxCount) {
 					throw e;

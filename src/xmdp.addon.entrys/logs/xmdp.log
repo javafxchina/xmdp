@@ -88,3 +88,7 @@ java.lang.Exception: 閲嶅鐨凷ideMenu key锛歛pp
 [2018-06-27 01:30:06,404][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] 解析EntrySet配置完成
 [2018-07-13 03:05:37,376][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:34] 开始解析EntrySet配置
 [2018-07-13 03:05:37,421][main][INFO][net.javafxchina.xmdp.addon.entrys.EntrySet:79] 解析EntrySet配置完成
+[2018-08-08 01:49:16,316][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:34] 开始解析EntrySet配置
+[2018-08-08 01:49:16,452][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:79] 解析EntrySet配置完成
+[2018-08-13 10:11:09,909][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:34] 开始解析EntrySet配置
+[2018-08-13 10:11:10,034][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:79] 解析EntrySet配置完成

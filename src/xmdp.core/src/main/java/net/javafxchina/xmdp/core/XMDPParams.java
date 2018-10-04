@@ -29,6 +29,13 @@ public class XMDPParams {
 	@Autowired
 	private Map cfgParams;
 	
+	public void listParams() {
+		logger.info("====ParamList====");
+		for(Object key:cfgParams.keySet()) {
+			logger.info(key+":"+cfgParams.get(key));
+		}
+		logger.info("====ParamList====");
+	}
 	public Object getParam(String key) {
 		if(!key.endsWith(".PWD")) {
 			return cfgParams.get(key);
