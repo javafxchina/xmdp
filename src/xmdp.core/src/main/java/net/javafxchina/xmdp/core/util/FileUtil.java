@@ -1,12 +1,16 @@
 package net.javafxchina.xmdp.core.util;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.channels.FileChannel;
 import java.nio.file.CopyOption;
 import java.nio.file.DirectoryNotEmptyException;
@@ -20,6 +24,7 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
+import javafx.collections.ObservableList;
 
 /**
  * 文件操作
@@ -56,9 +61,9 @@ public class FileUtil {
 		int MaxCount = 3;
 		while (count < MaxCount) {
 			try {
-				if(dir.exists()&&dir.isDirectory()) {
+				if (dir.exists() && dir.isDirectory()) {
 					return;
-				}else {
+				} else {
 					if (!dir.mkdirs()) {
 						count++;
 						throw new Exception("移动文件失败:创建目录" + dir.getAbsolutePath() + "失败！");
@@ -738,7 +743,13 @@ public class FileUtil {
 
 	}
 
-	public static void appendWriteFile(File resultRecord, String... lines) {
+	/**
+	 * 向一个文件中追加写入内容，注意如果写入的内容有多行，则会自动追加写入换行符System.getProperty("line.separator"）
+	 * @param charsetName {@link java.nio.charset.Charset}
+	 * @param resultRecord 待追加写入的文件
+	 * @param lines 待写入的内容
+	 */
+	public static void appendWriteFile( String charsetName ,File resultRecord,String... lines) {
 		int count = 0;
 		if (lines != null && lines.length > 0) {
 			count = lines.length;
@@ -749,8 +760,8 @@ public class FileUtil {
 			OutputStreamWriter os = null;
 			PrintWriter pw = null;
 			try {
-				fos = new FileOutputStream(resultRecord,true);
-				os = new OutputStreamWriter(fos, "UTF-8");
+				fos = new FileOutputStream(resultRecord, true);
+				os = new OutputStreamWriter(fos, charsetName);
 				pw = new PrintWriter(os);
 				int index = 1;
 				for (String str : lines) {
@@ -785,13 +796,52 @@ public class FileUtil {
 		}
 
 	}
+	public static void appendWriteFileUTF8(File resultRecord, String... lines) {
+		appendWriteFile( "UTF-8",resultRecord,  lines) ;
+	}
+	/**
+	 * 从给定的文本文件中读取信息，并按行存入List
+	 * @param file 待读取的文件
+	 * @param charsetName  {@link java.nio.charset.Charset}
+	 * @return 文件内容字符串列表
+	 * @throws Exception 当文件读取过程中发生异常则抛出
+	 */
+	public static List<String> readFile(File file,String charsetName ) throws Exception {
+		List<String >result=new ArrayList<String>();
+		if (file.exists() == false) {
+			return result;
+		}
+		// 分析文件
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),charsetName));
+			String temp = reader.readLine();
+			while (temp != null) {
+				result.add(temp);
+				temp = reader.readLine();
+			}
+			return result;
+		} finally {
+			if (reader != null) {
+				try {
+					reader.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
 
-	public static void main(String[] args) {
+	}
+
+	public static void main(String[] args) throws Exception {
 		createFileWithLine(new File("D:\\2.txt"), "白日依山尽");
 		createFileWithLines(new File("D:\\1.txt"), "白日依山尽", "黄河入海流", "Rest in reason,Move in passion", "19850311");
-		appendWriteFile(new File("D:\\1.txt"), "\r\n追加追加");
-		appendWriteFile(new File("D:\\1.txt"), "追加追加2");
-		appendWriteFile(new File("D:\\1.txt"), "追加追加3","4","5");
+		appendWriteFileUTF8(new File("D:\\1.txt"), "\r\n追加追加");
+		appendWriteFileUTF8(new File("D:\\1.txt"), "追加追加2");
+		appendWriteFileUTF8(new File("D:\\1.txt"), "追加追加3", "4", "5");
+		
+		List<String>list=readFile(new File("D:\\1.txt"),"UTF-8");
+		System.out.println(list);
 //		System.out.println(getMainFileName("D:\\abc.\\1.png"));
 //		System.out.println(getMainFileName(new File("D:\\3")));
 	}
