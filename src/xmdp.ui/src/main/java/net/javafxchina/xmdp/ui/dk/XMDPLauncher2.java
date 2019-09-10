@@ -1,6 +1,7 @@
 package net.javafxchina.xmdp.ui.dk;
 
 import java.util.List;
+import java.util.TreeMap;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -68,29 +69,29 @@ public class XMDPLauncher2 extends Application {
 
 		Rectangle2D res;
 
-		if (Screen.getScreens().size() == 1) {
+//		if (Screen.getScreens().size() == 1) {
 			res = Screen.getPrimary().getVisualBounds();
-		} else {
-			Rectangle2D stageRect = new Rectangle2D(stage.getX(), stage.getY(), stage.getWidth(), stage.getHeight());
-			List<Screen> screens = Screen.getScreensForRectangle(stageRect);
-
-			// The stage is entirely rendered on one screen, which is either the
-			// primary one or not, we don't care here.
-			// if (screens.size() == 1) {
-			res = screens.get(0).getVisualBounds();
-			// } else {
-			// The stage is spread over several screens.
-			// We compute the surface of the stage on each on the involved
-			// screen to select the biggest one == still to be implemented.
-			// TreeMap<String, Screen> sortedScreens = new TreeMap<>();
-			//
-			// for (Screen screen : screens) {
-			// computeSurface(screen, stageRect, sortedScreens);
-			// }
-			//
-			// res = sortedScreens.get(sortedScreens.lastKey()).getVisualBounds();
-			// }
-		}
+//		} else {
+//			Rectangle2D stageRect = new Rectangle2D(stage.getX(), stage.getY(), stage.getWidth(), stage.getHeight());
+//			List<Screen> screens = Screen.getScreensForRectangle(stageRect);
+//
+//			// The stage is entirely rendered on one screen, which is either the
+//			// primary one or not, we don't care here.
+//			if (screens.size() == 1) {
+//				res = screens.get(0).getVisualBounds();
+//			} else {
+//				// The stage is spread over several screens.
+//				// We compute the surface of the stage on each on the involved
+//				// screen to select the biggest one == still to be implemented.
+//				TreeMap<String, Screen> sortedScreens = new TreeMap<>();
+////
+////				for (Screen screen : screens) {
+////					computeSurface(screen, stageRect, sortedScreens);
+////				}
+//
+//				res = sortedScreens.get(sortedScreens.lastKey()).getVisualBounds();
+//			}
+//		}
 
 		return res;
 	}

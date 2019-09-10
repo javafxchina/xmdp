@@ -198,7 +198,7 @@ public class FileUtil {
 	}
 
 	/**
-	 * 获取dir下的指定扩展名的文件清单（不包括文件夹）
+	 * 获取dir下的指定扩展名的文件清单（不包括文件夹）,注意不包含子文件夹下的对应文件
 	 * 
 	 * @param dir
 	 * @param extNames 如果此参数未空，则列出所有子文件清单
@@ -229,6 +229,42 @@ public class FileUtil {
 		return result;
 	}
 
+	/**
+	 * 获取dir下的指定扩展名的文件清单（不包括文件夹）,注意包含子文件夹下的对应文件
+	 * 
+	 * @param dir
+	 * @param extNames 如果此参数未空，则列出所有子文件清单
+	 * @return 符合extNames约束要求的子文件清单
+	 */
+	public static List<File>getSubFilesExt(File dir, String... extNames) {
+
+		List<File> result = new ArrayList<File>();
+		File[] files = dir.listFiles();
+		for (File file : files) {
+			if (!file.isDirectory()) {
+				boolean isResult = false;
+				if (extNames == null || extNames.length == 0) {
+					isResult = true;
+				} else {
+					for (String ext : extNames) {
+						String name = file.getName();
+						if (name.toLowerCase().endsWith(ext.toLowerCase())) {
+							isResult = true;
+							break;
+						}
+					}
+				}
+				if (isResult) {
+					result.add(file);
+				}
+			}else {
+				List<File> subResult=getSubFilesExt(file,extNames);
+				result.addAll(subResult);
+			}
+		}
+		return result;
+	
+	}
 	/**
 	 * 获取所有的子文件和子文件夹
 	 * 
