@@ -279,6 +279,32 @@ public class FileUtil {
 		}
 		return result;
 	}
+	
+	/**
+	 * 获取所有的叶子文件夹，即没有下级文件夹的最底层文件夹
+	 * @param rootDir 待获取内容的根文件夹
+	 * @return 子文件和子文件夹列表
+	 */
+	public static List<File>getLeafSubDirs(File rootDir){
+		List<File> result = new ArrayList<File>();
+		if(!rootDir.isDirectory()) {
+			return result;
+		}
+		File[] subDirs = rootDir.listFiles();
+		int count=0;
+		for (File dir : subDirs) {
+			if(dir.isDirectory()) {
+				count++;
+				List<File> subResult=getLeafSubDirs(dir);
+				result.addAll(subResult);
+			}
+		}
+		if(count==0) {
+			result.add(rootDir);
+		}
+		
+		return result;
+	}
 
 	/**
 	 * 获取子文件个数（包括文件夹和文件） 注意：需要JDK7以上
@@ -870,16 +896,20 @@ public class FileUtil {
 	}
 
 	public static void main(String[] args) throws Exception {
-		createFileWithLine(new File("D:\\2.txt"), "白日依山尽");
-		createFileWithLines(new File("D:\\1.txt"), "白日依山尽", "黄河入海流", "Rest in reason,Move in passion", "19850311");
-		appendWriteFileUTF8(new File("D:\\1.txt"), "\r\n追加追加");
-		appendWriteFileUTF8(new File("D:\\1.txt"), "追加追加2");
-		appendWriteFileUTF8(new File("D:\\1.txt"), "追加追加3", "4", "5");
-		
-		List<String>list=readFile(new File("D:\\1.txt"),"UTF-8");
-		System.out.println(list);
+//		createFileWithLines(new File("D:\\1.txt"), "白日依山尽", "黄河入海流", "Rest in reason,Move in passion", "19850311");
+//		appendWriteFileUTF8(new File("D:\\1.txt"), "\r\n追加追加");
+//		appendWriteFileUTF8(new File("D:\\1.txt"), "追加追加2");
+//		appendWriteFileUTF8(new File("D:\\1.txt"), "追加追加3", "4", "5");
+//		
+//		List<String>list=readFile(new File("D:\\1.txt"),"UTF-8");
+//		System.out.println(list);
 //		System.out.println(getMainFileName("D:\\abc.\\1.png"));
 //		System.out.println(getMainFileName(new File("D:\\3")));
+		File rootDir=new File("D:\\JZR\\JZR201901P_BBW_ImgPlatform\\DevLib\\trunk\\src\\Tools\\tools.input");
+		List<File>list=getLeafSubDirs(rootDir);
+		for(File f:list) {
+			System.out.println(f.getAbsolutePath());
+		}
 	}
 
 }
