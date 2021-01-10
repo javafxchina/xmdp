@@ -145,4 +145,14 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<packaging>pom</packaging>
+	<modules>
+		<module>xmdp.addon</module>
+		<module>xmdp.addon.demo</module>
+		<module>xmdp.addon.entrys</module>
+		<module>xmdp.addon.test</module>
+		<module>xmdp.core</module>
+		<module>xmdp.integration</module>
+		<module>xmdp.product</module>
+		<module>xmdp.ui</module>
+	</modules>
 </project>

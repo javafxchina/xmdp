@@ -1,0 +1,56 @@
+[
+	{
+		"key": "explore_javafxchina",
+		"showName": "JavaFXChina",
+		"iconpath": "logoIcon.png",
+		"type": "WEB",
+		"className": "",
+		"uri": "www.javafxchina.net",
+		"extParam": ""
+	},
+	{
+		"key": "TestClientView",
+		"showName": "TestClientView",
+		"iconpath": "demo.png",
+		"type": "CLIENT",
+		"className": "net.javafxchina.xdmp.addon.demo.TestClientView",
+		"uri": "",
+		"extParam": ""
+	},
+	{
+		"key": "最简单FXML视图",
+		"showName": "最简单FXML视图",
+		"iconpath": "demo.png",
+		"type": "CLIENT_FXML",
+		"className": "",
+		"uri": "demo/custom.fxml",
+		"extParam": ""
+	},
+	{
+		"key": "最简单FXML视图+控制类",
+		"showName": "最简单FXML视图+控制类",
+		"iconpath": "demo.png",
+		"type": "CLIENT_FXML",
+		"className": "",
+		"uri": "demo/TestFXMLSpringView.fxml",
+		"extParam": ""
+	},
+	{
+		"key": "TestClientView+Spring托管控制类",
+		"showName": "TestClientView+Spring托管控制类",
+		"iconpath": "demo.png",
+		"type": "CLIENT",
+		"className": "net.javafxchina.xdmp.addon.demo.TestClientSpringView",
+		"uri": "demo/TestClientSpringView.fxml",
+		"extParam": ""
+	},
+	{
+		"key": "scenebuilder",
+		"showName": "SceneBuilder",
+		"iconpath": "ide.png",
+		"type": "EXTERN_JAR",
+		"className": "",
+		"uri": "extern/xmdp.scenebuilder-1.0.0.jar",
+		"extParam": ""
+	}
+]
