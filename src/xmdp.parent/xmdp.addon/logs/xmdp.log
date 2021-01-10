@@ -278,3 +278,23 @@
 [2020-11-23 23:32:26,170][main][WARN][net.javafxchina.xmdp.addon.test.LoggerTest:15] warn
 [2020-11-23 23:32:26,170][main][INFO][net.javafxchina.xmdp.addon.test.LoggerTest:16] info
 [2020-11-23 23:32:26,171][main][ERROR][net.javafxchina.xmdp.addon.test.LoggerTest:17] error
+[2021-01-10 21:57:45,732][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.addon
+[2021-01-10 21:57:45,734][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:57:45,749][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:57:45,749][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 1 addons
+[2021-01-10 21:57:45,750][main][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:57:45,750][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:57:45,977][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:57:45,988][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:57:45,996][main][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:57:45,998][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:57:45,999][main][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:57:45,999][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:57:45,999][main][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:57:45,999][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:57:45,999][main][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:57:46,359][main][TRACE][net.javafxchina.xmdp.addon.test.LoggerTest:13] trace
+[2021-01-10 21:57:46,359][main][DEBUG][net.javafxchina.xmdp.addon.test.LoggerTest:14] debug
+[2021-01-10 21:57:46,359][main][WARN][net.javafxchina.xmdp.addon.test.LoggerTest:15] warn
+[2021-01-10 21:57:46,359][main][INFO][net.javafxchina.xmdp.addon.test.LoggerTest:16] info
+[2021-01-10 21:57:46,359][main][ERROR][net.javafxchina.xmdp.addon.test.LoggerTest:17] error

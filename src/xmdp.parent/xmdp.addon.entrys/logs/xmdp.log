@@ -102,3 +102,5 @@ java.lang.Exception: 閲嶅鐨凷ideMenu key锛歛pp
 [2020-09-28 16:11:50,123][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
 [2020-11-23 23:32:35,326][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
 [2020-11-23 23:32:35,388][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:57:50,149][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:57:50,174][main][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成

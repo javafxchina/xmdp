@@ -113,6 +113,11 @@
 			<artifactId>controlsfx</artifactId>
 			<version>8.40.14</version>
 		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.200</version>
+		</dependency>
 	</dependencies>
 
 
@@ -154,5 +159,7 @@
 		<module>xmdp.integration</module>
 		<module>xmdp.product</module>
 		<module>xmdp.ui</module>
+
+		<module>xmdp.addon.h2db</module>
 	</modules>
 </project>

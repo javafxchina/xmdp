@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -13,5 +15,17 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd
            http://www.springframework.org/schema/util
 		   http://www.springframework.org/schema/util/spring-util.xsd">
-		   <context:component-scan base-package="net.javafxchina.xmdp.addon.*,net.javafxchina.xdmp.addon.demo" />
+	<context:component-scan
+		base-package="net.javafxchina.xmdp.addon.*,net.javafxchina.xdmp.addon.demo" />
+		<bean id="h2DB"
+		class="net.javafxchina.xmdp.addon.h2db.H2Service" init-method="init">
+		<property name="on" value="true"></property>
+		<property name="debug" value="true"></property>
+		<property name="driverClassName" value="org.h2.Driver" />
+		<property name="port" value="54321" />
+		<property name="url"
+			value="jdbc:h2:tcp://localhost:54321/./db/data;DB_CLOSE_DELAY=1000" />
+		<property name="username" value="p+KBodjiXOw=.PWD" />
+		<property name="password" value="p+KBodjiXOw=.PWD" />
+	</bean>
 </beans>

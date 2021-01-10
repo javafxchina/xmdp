@@ -27,7 +27,7 @@
 		</dependency>
 		<dependency>
 			<groupId>net.javafxchina</groupId>
-			<artifactId>xdmp.addon.demo</artifactId>
+			<artifactId>xmdp.addon.demo</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>

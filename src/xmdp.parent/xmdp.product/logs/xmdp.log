@@ -3658,3 +3658,1076 @@ Caused by: java.lang.IllegalStateException: Location is not set.
 [2021-01-10 17:41:59,797][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
 [2021-01-10 17:41:59,799][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
 [2021-01-10 17:41:59,806][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 18:12:41,758][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 18:12:41,762][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 18:12:41,788][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 18:12:41,788][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 18:12:41,789][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 18:12:41,790][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 18:12:41,790][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 18:12:42,143][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.dk.XMDPLauncher:50] 启动桌面失败
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'h2DB' defined in file [E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\xmdp.xml]: Could not resolve placeholder 'root' in value "jdbc:h2:tcp://localhost:54321/${root}/db/data;DB_CLOSE_DELAY=1000"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'root' in value "jdbc:h2:tcp://localhost:54321/${root}/db/data;DB_CLOSE_DELAY=1000"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:223) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:222) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:86) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:283) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:163) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at net.javafxchina.xmdp.addon.AddonsLauncher.init(AddonsLauncher.java:67) ~[classes/:?]
+	at net.javafxchina.xmdp.ui.dk.XMDPLauncher.start(XMDPLauncher.java:32) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:186) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'root' in value "jdbc:h2:tcp://localhost:54321/${root}/db/data;DB_CLOSE_DELAY=1000"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:258) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:220) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 17 more
+[2021-01-10 20:07:25,022][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:07:25,025][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:07:25,050][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:07:25,051][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:07:25,051][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:07:25,052][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:07:25,053][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:07:25,390][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.dk.XMDPLauncher:50] 启动桌面失败
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'h2DB' defined in file [E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\xmdp.xml]: Could not resolve placeholder 'root' in value "jdbc:h2:tcp://localhost:54321/${root}/db/data;DB_CLOSE_DELAY=1000"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'root' in value "jdbc:h2:tcp://localhost:54321/${root}/db/data;DB_CLOSE_DELAY=1000"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:223) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:222) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:86) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:283) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:163) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at net.javafxchina.xmdp.addon.AddonsLauncher.init(AddonsLauncher.java:67) ~[classes/:?]
+	at net.javafxchina.xmdp.ui.dk.XMDPLauncher.start(XMDPLauncher.java:32) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:186) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'root' in value "jdbc:h2:tcp://localhost:54321/${root}/db/data;DB_CLOSE_DELAY=1000"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:258) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:220) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 17 more
+[2021-01-10 20:07:46,287][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:07:46,290][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:07:46,316][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:07:46,316][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:07:46,317][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:07:46,318][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:07:46,318][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:07:46,716][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:07:46,783][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:07:46,784][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:07:46,784][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:07:46,849][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.dk.XMDPLauncher:50] 启动桌面失败
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2DB' defined in file [E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\xmdp.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'root' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext' - maybe not public?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at net.javafxchina.xmdp.addon.AddonsLauncher.init(AddonsLauncher.java:67) ~[classes/:?]
+	at net.javafxchina.xmdp.ui.dk.XMDPLauncher.start(XMDPLauncher.java:32) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:186) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'root' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext' - maybe not public?
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:164) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1448) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.doEvaluate(BeanDefinitionValueResolver.java:255) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate(BeanDefinitionValueResolver.java:214) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:186) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1531) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1276) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 19 more
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'root' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext' - maybe not public?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:226) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:81) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:132) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:297) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:105) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:42) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:161) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1448) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.doEvaluate(BeanDefinitionValueResolver.java:255) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate(BeanDefinitionValueResolver.java:214) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:186) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1531) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1276) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 19 more
+[2021-01-10 20:08:51,682][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:08:51,685][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:08:51,709][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:08:51,710][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:08:51,710][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:08:51,711][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:08:51,711][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:08:52,102][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:08:52,170][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:08:52,170][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:08:52,170][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:09:02,112][JavaFX Application Thread][WARN][xmdp.addon.h2db.H2Service:52] Database is NOT enable!
+[2021-01-10 20:09:02,115][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 20:09:02,121][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 20:09:02,124][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 20:09:02,142][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 20:09:02,152][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=xmdp.addon.h2db.H2Service
+[2021-01-10 20:09:02,159][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 20:09:02,162][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 20:09:02,162][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 20:09:02,162][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 20:09:02,163][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 20:09:02,163][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 20:09:02,163][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 20:09:02,180][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 20:09:02,180][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@6cf811ee
+[2021-01-10 20:09:02,254][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 20:09:02,278][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 20:09:02,292][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 20:09:02,292][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 20:09:02,356][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 20:09:02,360][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 20:09:02,361][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 20:09:02,370][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 20:10:00,813][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:10:00,817][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:10:00,846][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:10:00,847][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:10:00,847][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:10:00,848][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:10:00,849][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:10:01,248][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:10:01,313][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:10:01,314][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:10:01,314][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:10:49,624][JavaFX Application Thread][INFO][xmdp.addon.h2db.H2Service:89] 初始化H2数据库成功
+[2021-01-10 20:10:49,625][JavaFX Application Thread][INFO][xmdp.addon.h2db.H2Service:90] H2Dao [debug=true, driverClassName=org.h2.Driver, port=54321, url=jdbc:h2:tcp://localhost:54321/E:/我的坚果云/98技术学习/JavaFX/XMDP/git/xmdp/src/xmdp.parent/xmdp.product/db/data;DB_CLOSE_DELAY=1000, username=sa, password=]
+[2021-01-10 20:10:49,628][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 20:10:49,635][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 20:10:49,639][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 20:10:49,660][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 20:10:49,674][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=xmdp.addon.h2db.H2Service
+[2021-01-10 20:10:49,684][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 20:10:49,688][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 20:10:49,688][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 20:10:49,689][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 20:10:49,689][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 20:10:49,689][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 20:10:49,689][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 20:10:49,709][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 20:10:49,709][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@cfcd47f
+[2021-01-10 20:10:49,787][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 20:10:49,809][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 20:10:49,827][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 20:10:49,828][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 20:10:49,915][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 20:10:49,921][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 20:10:49,922][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 20:10:49,932][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 20:12:16,845][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:12:16,849][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:12:16,877][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:12:16,878][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:12:16,878][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:12:16,880][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:12:16,880][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:12:17,290][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:12:17,364][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:12:17,365][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:12:17,366][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:12:45,701][JavaFX Application Thread][ERROR][xmdp.addon.h2db.H2Service:92] 初始化失败A file path that is implicitly relative to the current working directory is not allowed in the database URL "jdbc:h2:tcp://localhost:54321/db/data;DB_CLOSE_DELAY=1000". Use an absolute path, ~/name, ./name, or the baseDir setting instead. [90011-200]
+[2021-01-10 20:16:41,180][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:16:41,183][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:16:41,209][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:16:41,209][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:16:41,209][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:16:41,210][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:16:41,211][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:16:41,607][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:16:41,675][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:16:41,675][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:16:41,675][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:16:44,826][JavaFX Application Thread][ERROR][xmdp.addon.h2db.H2Service:92] 初始化失败General error: "java.lang.NumberFormatException: For input string: ""54321.""" [50000-200]
+[2021-01-10 20:16:44,830][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.dk.XMDPLauncher:50] 启动桌面失败
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2DB' defined in file [E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\xmdp.xml]: Invocation of init method failed; nested exception is org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.NumberFormatException: For input string: ""54321.""" [50000-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at net.javafxchina.xmdp.addon.AddonsLauncher.init(AddonsLauncher.java:67) ~[classes/:?]
+	at net.javafxchina.xmdp.ui.dk.XMDPLauncher.start(XMDPLauncher.java:32) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:186) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.NumberFormatException: For input string: ""54321.""" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.convert(DbException.java:347) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.toSQLException(DbException.java:319) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.TraceObject.logAndConvert(TraceObject.java:366) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:189) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.200.jar:1.4.200]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_241]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[?:1.8.0_241]
+	at xmdp.addon.h2db.H2Service.init(H2Service.java:72) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1695) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 20 more
+Caused by: java.lang.NumberFormatException: For input string: "54321."
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_241]
+	at java.lang.Integer.parseInt(Integer.java:580) ~[?:1.8.0_241]
+	at java.lang.Integer.valueOf(Integer.java:740) ~[?:1.8.0_241]
+	at java.lang.Integer.decode(Integer.java:1197) ~[?:1.8.0_241]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:79) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:119) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:435) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:321) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.200.jar:1.4.200]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_241]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[?:1.8.0_241]
+	at xmdp.addon.h2db.H2Service.init(H2Service.java:72) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1695) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 20 more
+[2021-01-10 20:17:07,183][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:17:07,186][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:17:07,210][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:17:07,211][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:17:07,211][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:17:07,212][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:17:07,213][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:17:07,609][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:17:07,677][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:17:07,677][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:17:07,677][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:42:55,223][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:42:55,226][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:42:55,251][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:42:55,252][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:42:55,252][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:42:55,253][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:42:55,253][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:42:55,652][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:42:55,719][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:42:55,720][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:42:55,720][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:43:49,002][JavaFX Application Thread][ERROR][xmdp.addon.h2db.H2Service:105] 初始化失败Wrong user name or password [28000-200]
+[2021-01-10 20:43:49,006][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.dk.XMDPLauncher:50] 启动桌面失败
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2DB' defined in file [E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\xmdp.xml]: Invocation of init method failed; nested exception is org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:357)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:176)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:168)
+	at java.lang.Thread.run(Thread.java:748)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at net.javafxchina.xmdp.addon.AddonsLauncher.init(AddonsLauncher.java:67) ~[classes/:?]
+	at net.javafxchina.xmdp.ui.dk.XMDPLauncher.start(XMDPLauncher.java:32) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:186) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:611) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:147) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:435) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:321) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.200.jar:1.4.200]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_241]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[?:1.8.0_241]
+	at xmdp.addon.h2db.H2Service.init(H2Service.java:85) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1695) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 20 more
+[2021-01-10 20:44:13,598][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 20:44:13,602][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 20:44:13,627][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 20:44:13,628][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 2 addons
+[2021-01-10 20:44:13,628][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 20:44:13,629][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 20:44:13,630][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 20:44:14,021][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 20:44:14,088][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 20:44:14,088][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 20:44:14,089][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 20:46:40,358][JavaFX Application Thread][INFO][xmdp.addon.h2db.H2Service:102] 初始化H2数据库成功
+[2021-01-10 20:46:47,874][JavaFX Application Thread][INFO][xmdp.addon.h2db.H2Service:103] H2Dao [debug=true, driverClassName=org.h2.Driver, port=54321, url=jdbc:h2:tcp://localhost:54321/./db/data;DB_CLOSE_DELAY=1000, username=cg2021, password=cg2021]
+[2021-01-10 20:46:47,878][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 20:46:47,884][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 20:46:47,887][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 20:46:47,905][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 20:46:47,916][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=xmdp.addon.h2db.H2Service
+[2021-01-10 20:46:47,923][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 20:46:47,926][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 20:46:47,927][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 20:46:47,927][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 20:46:47,927][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 20:46:47,927][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 20:46:47,927][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 20:46:47,945][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 20:46:47,945][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@65db4a2
+[2021-01-10 20:46:48,020][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 20:46:48,041][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 20:46:48,056][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 20:46:48,057][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 20:46:48,124][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 20:46:48,127][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 20:46:48,129][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 20:46:48,137][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:00:25,859][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:00:25,862][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:00:25,881][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:00:25,882][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:00:25,882][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:00:25,883][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:00:25,883][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:00:25,884][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:00:26,192][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:00:26,225][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:00:26,226][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:00:26,226][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:00:26,233][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:00:26,237][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:00:26,239][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:00:26,253][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:00:26,260][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=xmdp.addon.h2db.H2Service
+[2021-01-10 21:00:26,269][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=xmdp.addon.h2db.H2Service
+[2021-01-10 21:00:26,276][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:00:26,285][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:00:26,286][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:00:26,286][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:00:26,286][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:00:26,286][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:00:26,286][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:00:26,300][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:00:26,300][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@651308e0
+[2021-01-10 21:00:26,381][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:00:26,399][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:00:26,411][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:00:26,412][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:00:26,464][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:00:26,468][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:00:26,469][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:00:26,476][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:01:36,218][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:01:36,221][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:01:36,238][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:01:36,239][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:01:36,239][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:01:36,240][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:01:36,240][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:01:36,240][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:01:36,542][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:01:36,573][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:01:36,573][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:01:36,573][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:01:36,580][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:01:36,584][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:01:36,586][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:01:36,598][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:01:36,606][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=xmdp.addon.h2db.H2Service
+[2021-01-10 21:01:36,613][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:01:36,615][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:01:36,615][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:01:36,615][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:01:36,615][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:01:36,616][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:01:36,616][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:01:36,629][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:01:36,629][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@cac5bb7
+[2021-01-10 21:01:36,716][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:01:36,747][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:01:36,758][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:01:36,759][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:01:36,812][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:01:36,816][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:01:36,817][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:01:36,824][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:09:05,712][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:09:05,714][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:09:05,732][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:09:05,733][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:09:05,733][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:09:05,734][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:09:05,734][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:09:05,734][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:09:06,029][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:09:06,060][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:09:06,060][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:09:06,060][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:09:06,067][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:09:06,070][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:09:06,072][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:09:06,084][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:09:06,092][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:09:06,099][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:09:06,101][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:09:06,102][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:09:06,102][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:09:06,102][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:09:06,102][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:09:06,102][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:09:06,115][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:09:06,116][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@14dabb88
+[2021-01-10 21:09:06,201][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:09:06,219][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:09:06,231][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:09:06,231][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:09:06,285][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:09:06,289][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:09:06,290][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:09:06,297][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:14:10,358][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:14:10,361][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:14:10,379][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:14:10,380][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:14:10,380][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:14:10,381][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:14:10,381][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:14:10,381][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:14:10,675][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:14:10,705][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:14:10,705][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:14:10,706][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:14:10,712][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:14:10,715][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:14:10,717][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:14:10,730][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:14:10,738][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:14:10,746][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:14:10,748][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:14:10,748][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:14:10,749][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:14:10,749][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:14:10,749][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:14:10,749][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:14:10,763][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:14:10,763][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@ec3bd5f
+[2021-01-10 21:14:10,850][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:14:10,893][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:14:10,905][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:14:10,905][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:14:10,959][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:14:10,962][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:14:10,963][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:14:10,970][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:16:38,741][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:16:38,743][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:16:38,760][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:16:38,761][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:16:38,761][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:16:38,762][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:16:38,762][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:16:38,762][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:16:39,061][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:16:39,093][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:16:39,094][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:16:39,094][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:16:39,101][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:16:39,105][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:16:39,107][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:16:39,119][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:16:39,127][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:16:39,134][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:16:39,137][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:16:39,138][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:16:39,138][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:16:39,138][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:16:39,138][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:16:39,138][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:16:39,152][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:16:39,153][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@5c3aeea1
+[2021-01-10 21:16:39,248][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:16:39,266][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:16:39,278][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:16:39,278][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:16:39,331][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:16:39,335][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:16:39,336][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:16:39,343][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:26:50,624][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:26:50,626][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:26:50,643][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:26:50,644][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:26:50,644][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:26:50,645][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:26:50,645][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:26:50,646][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:26:50,942][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:26:50,973][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:26:50,974][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:26:50,974][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:26:50,981][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:26:50,984][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:26:50,987][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:26:50,999][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:26:51,007][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:26:51,008][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:26:51,014][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:26:51,017][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:26:51,017][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:26:51,017][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:26:51,017][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:26:51,017][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:26:51,017][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:26:51,031][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:26:51,032][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@236905f3
+[2021-01-10 21:26:51,121][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:26:51,139][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:26:51,150][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:26:51,151][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:26:51,204][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:26:51,208][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:26:51,209][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:26:51,216][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:30:26,529][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:30:26,531][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:30:26,549][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:30:26,549][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:30:26,550][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:30:26,550][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:30:26,550][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:30:26,550][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:30:26,847][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:30:26,878][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:30:26,878][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:30:26,879][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:30:26,885][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:30:26,889][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:30:26,891][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:30:26,903][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:30:26,912][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:30:26,912][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:30:26,919][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:30:26,922][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:30:26,922][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:30:26,922][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:30:26,922][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:30:26,923][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:30:26,923][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:30:26,937][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:30:26,937][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@236905f3
+[2021-01-10 21:30:27,023][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:30:27,041][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:30:27,053][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:30:27,053][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:30:27,107][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:30:27,111][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:30:27,112][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:30:27,118][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:32:57,527][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:32:57,529][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:32:57,547][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:32:57,547][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:32:57,547][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:32:57,548][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:32:57,549][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:32:57,549][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:32:57,844][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:32:57,875][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:32:57,876][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:32:57,876][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:32:57,883][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:32:57,886][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:32:57,888][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:32:57,900][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:32:57,909][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:32:57,909][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:32:57,915][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:32:57,918][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:32:57,918][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:32:57,918][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:32:57,918][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:32:57,918][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:32:57,918][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:32:57,932][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:32:57,933][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@236905f3
+[2021-01-10 21:32:58,015][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:32:58,033][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:32:58,045][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:32:58,046][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:32:58,099][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:32:58,103][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:32:58,104][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:32:58,110][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:38:56,365][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:38:56,367][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:38:56,387][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:38:56,387][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:38:56,387][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:38:56,388][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:38:56,389][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:38:56,389][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:38:56,687][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:38:56,718][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:38:56,719][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:38:56,719][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:38:56,727][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:38:56,731][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:38:56,733][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:38:56,745][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:38:56,754][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:38:56,756][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:38:56,763][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:38:56,765][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:38:56,765][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:38:56,766][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:38:56,766][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:38:56,766][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:38:56,766][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:38:56,783][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:38:56,783][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@51868f82
+[2021-01-10 21:38:56,869][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:38:56,887][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:38:56,900][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:38:56,900][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:38:56,953][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:38:56,957][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:38:56,958][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:38:56,966][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:41:06,232][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:41:06,235][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:41:06,253][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:41:06,254][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:41:06,254][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:41:06,255][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:41:06,255][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:41:06,256][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:41:06,571][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:41:06,603][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:41:06,604][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:41:06,604][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:41:06,613][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:41:06,616][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:41:06,619][JavaFX Application Thread][INFO][net.javafxchina.xdmp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:41:06,632][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:41:06,640][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:41:06,641][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:41:06,649][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:41:06,649][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:41:06,666][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:41:06,668][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:41:06,669][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:41:06,669][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:41:06,669][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:41:06,669][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:41:06,669][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:41:06,683][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:41:06,684][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@453aaea5
+[2021-01-10 21:41:06,762][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:41:06,779][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:41:06,791][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:41:06,791][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:41:06,842][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:41:06,846][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:41:06,847][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:41:06,856][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:45:52,898][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:45:52,901][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:45:52,919][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:45:52,920][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:45:52,920][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:45:52,921][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:45:52,921][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:45:52,922][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:45:53,232][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:45:53,264][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:45:53,265][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:45:53,265][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:45:53,276][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:45:53,278][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:45:53,280][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:45:53,292][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:45:53,302][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:45:53,303][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:45:53,311][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:45:53,311][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:45:53,318][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:45:53,320][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:45:53,320][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:45:53,320][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:45:53,321][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:45:53,321][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:45:53,321][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:45:53,344][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:45:53,345][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@50b5ed31
+[2021-01-10 21:45:53,427][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:45:53,445][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:45:53,457][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:45:53,457][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:45:53,512][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:45:53,515][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:45:53,517][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:45:53,524][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:46:25,898][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:46:25,901][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:46:25,919][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:46:25,920][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:46:25,920][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:46:25,921][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:46:25,921][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:46:25,921][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:46:26,234][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:46:26,267][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:46:26,268][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:46:26,268][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:46:26,279][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:46:26,282][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:46:26,283][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:46:26,296][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:46:26,305][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:46:26,305][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:46:26,313][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:46:26,313][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:46:26,320][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:46:26,322][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:46:26,323][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:46:26,323][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:46:26,323][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:46:26,323][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:46:26,323][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:46:26,337][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:46:26,338][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@463ab2
+[2021-01-10 21:46:26,431][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:46:26,448][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:46:26,459][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:46:26,459][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:46:26,515][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:46:26,519][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:46:26,520][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:46:26,526][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:46:46,643][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:46:46,646][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:46:46,665][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:46:46,666][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:46:46,666][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:46:46,667][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:46:46,668][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:46:46,668][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:46:46,983][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:46:47,015][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:46:47,016][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:46:47,016][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:46:47,025][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:46:47,027][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:46:47,029][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:46:47,044][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:46:47,053][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:46:47,055][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:46:47,064][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:46:47,065][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:46:47,071][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:46:47,075][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:46:47,075][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:46:47,075][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:46:47,076][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:46:47,076][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:46:47,076][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:46:47,101][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:46:47,101][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@720fc4dd
+[2021-01-10 21:46:47,178][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:46:47,196][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:46:47,209][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:46:47,209][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:46:47,264][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:46:47,268][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:46:47,269][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:46:47,278][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:47:27,273][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:47:27,275][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:47:27,293][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:47:27,294][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:47:27,294][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:47:27,295][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:47:27,295][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:47:27,295][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:47:27,596][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:47:27,627][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:47:27,628][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:47:27,628][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:47:27,636][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:47:27,638][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:47:27,640][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:47:27,653][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:47:27,662][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service
+[2021-01-10 21:47:27,663][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=h2DB2;ClassName=net.javafxchina.xmdp.addon.h2db.H2Service2
+[2021-01-10 21:47:27,671][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:47:27,674][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:47:27,674][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:47:27,674][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:47:27,674][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:47:27,674][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:47:27,674][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:47:27,692][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:47:27,692][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@534e4c2c
+[2021-01-10 21:47:27,780][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:47:27,798][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:47:27,810][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:47:27,810][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:47:27,863][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:47:27,867][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:47:27,869][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:47:27,877][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:49:35,093][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:49:35,096][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:49:35,113][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:49:35,114][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:49:35,114][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:49:35,115][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:49:35,115][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:49:35,115][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:49:35,419][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:49:35,450][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:49:35,451][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:49:35,451][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:49:35,459][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:49:35,461][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:49:35,463][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:49:35,478][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:49:35,487][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:49:35,489][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:49:35,489][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:49:35,489][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:49:35,490][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:49:35,490][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:49:35,490][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:49:35,503][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:49:35,503][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@60ddc48c
+[2021-01-10 21:49:35,584][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:49:35,602][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:49:35,614][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:49:35,615][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:49:35,669][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:49:35,674][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:49:35,675][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:49:35,682][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:55:26,239][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:55:26,241][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:55:26,259][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:55:26,260][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:55:26,260][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:55:26,261][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:55:26,262][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:55:26,262][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:55:26,565][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:55:26,596][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:55:26,596][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:55:26,597][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:55:26,606][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:55:26,608][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:55:26,609][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:55:26,612][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.dk.XMDPLauncher:50] 启动桌面失败
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2DB' defined in file [E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\addons\addon.xml]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [net.javafxchina.xmdp.addon.h2db.H2Service] for resource metadata: could not find class that it depends on
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at net.javafxchina.xmdp.addon.AddonsLauncher.init(AddonsLauncher.java:67) ~[classes/:?]
+	at net.javafxchina.xmdp.ui.dk.XMDPLauncher.start(XMDPLauncher.java:32) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:186) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: java.lang.IllegalStateException: Failed to introspect bean class [net.javafxchina.xmdp.addon.h2db.H2Service] for resource metadata: could not find class that it depends on
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:344) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:992) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/h2/tools/Server;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_241]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_241]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:715) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:656) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:361) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:340) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:992) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.h2.tools.Server
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[?:1.8.0_241]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_241]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_241]
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_241]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_241]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:715) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:656) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:361) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:340) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:992) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 19 more
+[2021-01-10 21:58:02,440][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:58:02,443][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:58:02,461][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:58:02,462][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:58:02,462][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:58:02,463][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:58:02,463][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:58:02,463][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:58:02,764][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:58:02,795][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:58:02,795][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:58:02,795][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:58:02,804][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:58:02,806][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:58:02,807][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:58:02,811][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.h2db.H2Service:53] ===================Start init Database!===================
+[2021-01-10 21:58:03,278][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.h2db.H2Service:91] ===================SUCCESS init Database!===================
+[2021-01-10 21:58:03,289][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:58:03,296][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:58:03,299][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:58:03,299][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:58:03,299][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:58:03,299][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:58:03,299][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:58:03,299][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:58:03,313][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:58:03,313][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@20944545
+[2021-01-10 21:58:03,384][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:58:03,412][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:58:03,429][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:58:03,429][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:58:03,504][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:58:03,508][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:58:03,509][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:58:03,517][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png
+[2021-01-10 21:59:13,906][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:56] localPath=E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product
+[2021-01-10 21:59:13,908][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:26] ==================AddonsManager created==================
+[2021-01-10 21:59:13,926][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:41] ============= Starting the Addons Search=============
+[2021-01-10 21:59:13,927][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:48] Found 3 addons
+[2021-01-10 21:59:13,927][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.entrys-1.0.0.jar
+[2021-01-10 21:59:13,928][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.h2db-1.0.0.jar
+[2021-01-10 21:59:13,928][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsManager:51] Found a addon jar:xmdp.addon.test-1.0.0.jar
+[2021-01-10 21:59:13,928][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:64] =============Core configuration loading=============
+[2021-01-10 21:59:14,225][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:36] 开始解析EntrySet配置
+[2021-01-10 21:59:14,256][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.addon.entrys.EntrySet:81] 解析EntrySet配置完成
+[2021-01-10 21:59:14,256][JavaFX Application Thread][DEBUG][net.javafxchina.xmdp.ui.dk.XMDPEntryFactory:61] XMDPEntryFactory初始化成功
+[2021-01-10 21:59:14,256][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController2:66] XMDPController2初始化成功
+[2021-01-10 21:59:14,265][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientFXMLSpringViewCotroller:38] TestClientFXMLSpringViewCotroller初始化成功
+[2021-01-10 21:59:14,267][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.demo.TestClientSpringViewCotroller:34] TestClientViewCotroller初始化成功
+[2021-01-10 21:59:14,269][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:19] =================TestAnnotationAddon init!=======================
+[2021-01-10 21:59:14,273][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.h2db.H2Service:53] ===================Start init Database!===================
+[2021-01-10 21:59:15,063][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.h2db.H2Service:91] ===================SUCCESS init Database!===================
+[2021-01-10 21:59:15,074][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:69] =============Loading addons=============
+[2021-01-10 21:59:15,082][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.addon.AddonsManager:84] Register beans in addon.xml:name=testAddon;ClassName=net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:59:15,084][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:15] =================TestAddon init!=======================
+[2021-01-10 21:59:15,085][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAddon:18] =================TestAddon doit!=======================
+[2021-01-10 21:59:15,085][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:84] XML Addon test：net.javafxchina.xmdp.addon.test.TestAddon
+[2021-01-10 21:59:15,085][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.test.TestAnnotationAddon:23] =================TestAnnotationAddon doit!=======================
+[2021-01-10 21:59:15,085][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:88] AnnotationAddon test：net.javafxchina.xmdp.addon.test.TestAnnotationAddon
+[2021-01-10 21:59:15,085][JavaFX Application Thread][INFO][net.javafxchina.xmdp.addon.AddonsLauncher:72] =============Core configuration loaded=============
+[2021-01-10 21:59:15,098][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.XMDPController:86] XMDPController初始化成功
+[2021-01-10 21:59:15,098][JavaFX Application Thread][INFO][net.javafxchina.xmdp.ui.dk.ControllerFactory:22] 控件工厂call,查找服务XMDPController;查找结果为net.javafxchina.xmdp.ui.dk.XMDPController@799ecb33
+[2021-01-10 21:59:15,158][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\logoIcon.png
+[2021-01-10 21:59:15,177][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\desktop\home.png
+[2021-01-10 21:59:15,189][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png
+[2021-01-10 21:59:15,190][JavaFX Application Thread][ERROR][net.javafxchina.xmdp.ui.util.ResourceUtil:123] 未找到图标:E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\test.png,将使用默认图标
+[2021-01-10 21:59:15,253][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\demo.png
+[2021-01-10 21:59:15,257][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\config.png
+[2021-01-10 21:59:15,259][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\ide.png
+[2021-01-10 21:59:15,269][JavaFX Application Thread][TRACE][net.javafxchina.xmdp.ui.util.ResourceUtil:120] 图标路径：E:\我的坚果云\98技术学习\JavaFX\XMDP\git\xmdp\src\xmdp.parent\xmdp.product\cfg\ui\img\title.png

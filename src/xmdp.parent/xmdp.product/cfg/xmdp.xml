@@ -31,4 +31,5 @@
 	<bean id="testBean" class="net.javafxchina.xmdp.core.TestBean"
 		init-method="init">
 	</bean>
+	
 </beans>

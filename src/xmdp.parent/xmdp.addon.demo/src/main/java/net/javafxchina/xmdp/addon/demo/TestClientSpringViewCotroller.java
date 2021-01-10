@@ -1,4 +1,4 @@
-package net.javafxchina.xdmp.addon.demo;
+package net.javafxchina.xmdp.addon.demo;
 
 import java.net.URL;
 import java.util.ResourceBundle;
